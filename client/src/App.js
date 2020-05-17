@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import API from "./utils/API"
+// import API from "./utils/API"
 
 import HomePage from "./pages/HomePage/HomePage";
-import Articles from "./pages/Articles/articles";
-import Market from './pages/Market';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Profile from './pages/Profile';
+// import Articles from "./pages/Articles/articles";
+// import Market from './pages/Market';
+// import Login from './pages/Login';
+// import Register from './pages/Register';
+// import Profile from './pages/Profile';
 
 class App extends Component {
   constructor(props) {
@@ -73,7 +73,7 @@ class App extends Component {
               <Link id="brand" to={"/"}>FauxFinance</Link>
 
               <ul className="nav">
-                <li className="nav-item active">
+                {/* <li className="nav-item active">
                   <Link className="nav-link btn py-0" to={"/articles"}>Articles</Link>
                 </li>
                 <li className="nav-item">
@@ -84,25 +84,25 @@ class App extends Component {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link btn  py-0" onClick={e => this.userLogout(e)}>Log out</a>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                     <a className="nav-link btn py-0" href="/profile">Profile</a>
                 </li> */}
                 {/* <li className="nav-item">
                   <a className="nav-link btn" onClick={this.userLogout}>Log out</a>
                 </li> */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link btn py-0" to={"/register"}>Register</Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
 
             <div>
               <Route exact path='/' component={HomePage} />
-              <Route exact path='/articles' component={Articles} />
+              {/* <Route exact path='/articles' component={Articles} />
               <Route exact path='/market' render={(props) => <Market user={this.state.user} callback={this.userUpdate}/>} />
               <Route exact path='/login' render={() => <Login callback={this.userLogin} />} />
-              <Route exact path='/register' component={Register} />
+              <Route exact path='/register' component={Register} /> */}
               {/* <Route exact path='/profile' component={Profile} /> */}
             </div>
           </div>
