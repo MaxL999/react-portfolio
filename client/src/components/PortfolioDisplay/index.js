@@ -12,7 +12,11 @@ function PortfolioDisplay(props) {
             </div>
             <div className="card-body">
 
-                <h6 className="text-muted">{props.lang}</h6>
+                <h6 className="text-muted d-flex justify-content-around">
+                    {props.lang.map((msg, i) => (
+                        <p key={i}>{msg}</p>
+                    ))}
+                </h6>
 
                 <p className="card-text">{props.desc}</p>
 
@@ -22,14 +26,12 @@ function PortfolioDisplay(props) {
                 <a href={props.link1} className="btn btn-primary m-1"
                     target="_blank" rel="noopener noreferrer">{props.link1Name}</a>
 
-                {props.link2 ?
+                {props.link2 &&
                     <a href={props.link2} className="btn btn-primary m-1"
                         target="_blank" rel="noopener noreferrer">{props.link2Name}
-                    </a>
-                    : false
-                }
+                    </a>}
 
-                {/* second footer with */}
+                {/* put updated time or a color indicator for how finished the project is */}
                 {/* <small class="text-muted">Last updated * mins ago</small> */}
 
             </div>
