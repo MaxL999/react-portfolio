@@ -1,3 +1,36 @@
 .width{
     min-width: 20rem
 }
+
+/* .introduction{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+} */
+
+/* 
+body{
+    color:white;
+}
+.btn{
+    color:white;
+} */
+
+
+/* background */
+.color1 {
+    background-color: #343434;
+}
+/* foreground */
+.color2 {
+    background-color: #4C4C4C;
+}
+/* warnings */
+.color3 {
+    background-color: #B3001B;
+}
+/* button/navbars */
+.color4 {
+    background-color: #1000FF;
+}
