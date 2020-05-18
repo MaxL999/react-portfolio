@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-import HomePage from "./pages/HomePage/HomePage";
-import Resume from "./pages/Resume/Resume";
-import Personal from "./pages/Personal/Personal";
-import Portfolio from "./pages/Portfolio/Portfolio";
+import HomePage from "./pages/HomePage";
+import Resume from "./pages/Resume";
+import Personal from "./pages/Personal";
+import Portfolio from "./pages/Portfolio";
 import NoMatch from "./components/NoMatch";
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
           <div>
             <nav className="navbar navbar-light">
               <ul className="nav">
-                <li className="nav-item active">
+                <li className="nav-item">
                   <Link className="nav-link btn py-0" to={"/Resume"}>Resume</Link>
                 </li>
                 <li className="nav-item">
@@ -29,10 +29,10 @@ class App extends Component {
             </nav>
 
             <Switch>
-              <Route exact path="/" render={() => <HomePage />} />
-              <Route exact path="/Resume" render={() => <Resume />} />
-              <Route exact path="/Personal" render={() => <Personal />} />
-              <Route exact path="/Portfolio" render={() => <Portfolio />} />
+              <Route path="/Resume" render={() => <Resume />} />
+              <Route path="/Personal" render={() => <Personal />} />
+              <Route path="/Portfolio" render={() => <Portfolio />} />
+              <Route path="/" render={() => <HomePage />} />
               <Route render={() => <NoMatch />} />
             </Switch>
           </div>

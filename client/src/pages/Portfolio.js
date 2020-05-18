@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-import PortfolioDisplay from "../../components/PortfolioDisplay"
+import PortfolioDisplay from "../components/PortfolioDisplay"
 
 class Portfolio extends Component {
     state = {
         portfolio: [
             {
                 name: "Rock, Paper, Scissors",
-                // lang: "Firebase database",
-                lang: ["Firebase"],
+                lang: ["Javascript","Firebase"],
                 desc: "What? You never played rock, paper, scissors or something?",
                 git: "https://maxl999.github.io/07-RPS-Multiplayer/",
                 link1: "https://maxl999.github.io/07-RPS-Multiplayer/",
@@ -17,7 +16,6 @@ class Portfolio extends Component {
                 link2Name: "TEST"
             }, {
                 name: "Hangman!",
-                // lang: "Javascript logic",
                 lang: ["Javascript"],
                 desc: "A classic hangman game that can be accessed on a webpage or directly thorugh a terminal using Node.",
                 git: "",
@@ -27,7 +25,6 @@ class Portfolio extends Component {
                 link2Name: false,
             }, {
                 name: "Minesweeper",
-                // lang: "Javascript",
                 lang: ["Javascript"],
                 desc: "The classic minesweeper game",
                 git: "",
@@ -37,7 +34,6 @@ class Portfolio extends Component {
                 link2Name: false
             }, {
                 name: "Burger-Breakin",
-                // lang: "MSQL, Handlebars, Heroku",
                 lang: ["MYSQL","Handlebars", "Heroku"],
                 desc: "A simple app where you can create and parse data, deployed unto the cloud with Heroku",
                 git: "",
@@ -45,10 +41,10 @@ class Portfolio extends Component {
                 link1Name: "Break-In",
                 link2: "",
                 link2Name: ""
-            },
+            }
             // {
             //     name: "",
-            //     lang: "",
+            //     lang: ["",""],
             //     desc: "",
             //     git: "",
             //     link1: "",
@@ -64,8 +60,8 @@ class Portfolio extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="card-deck px-3">
-                            {this.state.portfolio.map(project => (
-                                <PortfolioDisplay {...project} className="col-md-4 col-xl-3s"/>
+                            {this.state.portfolio.map((project, i) => (
+                                <PortfolioDisplay {...project} className="col-md-4 col-xl-3s" key={i}/>
                             ))}
                         </div>
                     </div>

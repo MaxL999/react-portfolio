@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NoMatch() {
+export default () => {
     return (
         <div class="card p-3 m-2">
             <div class="card-body">
@@ -10,4 +10,3 @@ function NoMatch() {
     )
 }
 
-export default NoMatch
