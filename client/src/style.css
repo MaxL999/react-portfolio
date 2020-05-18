@@ -1,13 +1,11 @@
 .width{
-    min-width: 20rem
+    min-width: 23rem
 }
 
-/* .introduction{
+.min-height{
     min-height: 100vh;
 
-    display: flex;
-    align-items: center;
-} */
+}
 
 /* 
 body{

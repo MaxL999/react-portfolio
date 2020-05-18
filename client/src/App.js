@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="minHeight">
+      <div className="min-height">
         <Router>
           <div>
             <nav className="navbar navbar-light">
@@ -33,6 +33,7 @@ class App extends Component {
               <Route path="/Personal" render={() => <Personal />} />
               <Route path="/Portfolio" render={() => <Portfolio />} />
               <Route path="/" render={() => <HomePage />} />
+              {/* no point if switch forces all not Resume/Person/Portfolio links to homepage instead */}
               <Route render={() => <NoMatch />} />
             </Switch>
           </div>
