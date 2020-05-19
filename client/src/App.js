@@ -11,34 +11,16 @@ class App extends Component {
 
   render() {
     return (
-      <>
-        <Router>
-          <div div className="min-height">
-            <nav className="navbar navbar-light">
-              <ul className="nav">
-                <li className="nav-item">
-                  <Link className="nav-link btn py-0" to={"/Resume"}>Resume</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link btn py-0" to={"/Personal"}>Personal</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link btn py-0" to={"/Portfolio"}>Portfolio</Link>
-                </li>
-              </ul>
-            </nav>
-
-            <Switch>
-              <Route path="/Resume" render={() => <Resume />} />
-              <Route path="/Personal" render={() => <Personal />} />
-              <Route path="/Portfolio" render={() => <Portfolio />} />
-              <Route path="/" render={() => <HomePage />} />
-              {/* no point if switch forces all not Resume/Person/Portfolio links to homepage instead */}
-              <Route path="/404" render={() => <NoMatch />} />
-            </Switch>
-          </div>
-        </Router>
-      </>
+      <Router>
+        <Switch>
+          <Route path="/Resume" render={() => <Resume />} />
+          <Route path="/Personal" render={() => <Personal />} />
+          <Route path="/Portfolio" render={() => <Portfolio />} />
+          <Route path="/" render={() => <HomePage />} />
+          {/* no point if switch forces all not Resume/Person/Portfolio links to homepage instead */}
+          <Route path="/404" render={() => <NoMatch />} />
+        </Switch>
+      </Router>
     );
   }
 }

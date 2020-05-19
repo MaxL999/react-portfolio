@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Navbar from '../components/Navbar'
 import PortfolioDisplay from "../components/PortfolioDisplay"
 
 class Portfolio extends Component {
@@ -7,7 +8,7 @@ class Portfolio extends Component {
         portfolio: [
             {
                 name: "Rock, Paper, Scissors",
-                lang: ["Javascript","Firebase"],
+                lang: ["Javascript", "Firebase"],
                 desc: "What? You never played rock, paper, scissors or something?",
                 git: "https://maxl999.github.io/07-RPS-Multiplayer/",
                 link1: "https://maxl999.github.io/07-RPS-Multiplayer/",
@@ -18,29 +19,29 @@ class Portfolio extends Component {
                 name: "Hangman!",
                 lang: ["Javascript"],
                 desc: "A classic hangman game that can be accessed on a webpage or directly thorugh a terminal using Node.",
-                git: "",
+                git: "https://github.com/MaxL999/3-WordGuess",
                 link: "https://maxl999.github.io/3-WordGuess/",
                 link1Name: "Webpage",
                 link2: false,
-                link2Name: false,
+                link2Name: false
             }, {
                 name: "Minesweeper",
                 lang: ["Javascript"],
                 desc: "The classic minesweeper game",
-                git: "",
+                git: "https://github.com/MaxL999/minesweeper",
                 link1: "https://maxl999.github.io/minesweeper/",
                 link1Name: "Minesweeper",
                 link2: false,
                 link2Name: false
             }, {
                 name: "Burger-Breakin",
-                lang: ["MYSQL","Handlebars", "Heroku"],
+                lang: ["MYSQL", "Handlebars", "Heroku"],
                 desc: "A simple app where you can create and parse data, deployed unto the cloud with Heroku",
-                git: "",
+                git: "https://github.com/MaxL999/12-burgerHandlebars",
                 link1: "https://burger-handlebars999.herokuapp.com/",
-                link1Name: "Break-In",
-                link2: "",
-                link2Name: ""
+                link1Name: "Heroku",
+                link2: false,
+                link2Name: false
             }
             // {
             //     name: "",
@@ -57,11 +58,12 @@ class Portfolio extends Component {
     render() {
         return (
             <>
+                <Navbar />
                 <div className="container-fluid">
                     <div className="row">
                         <div className="card-deck px-3">
                             {this.state.portfolio.map((project, i) => (
-                                <PortfolioDisplay {...project} className="col-md-4 col-xl-3s" key={i}/>
+                                <PortfolioDisplay {...project} className="col-md-4 col-xl-3s" key={i} />
                             ))}
                         </div>
                     </div>
