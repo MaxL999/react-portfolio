@@ -1,7 +1,7 @@
 .jumbotron {
-     background-image: url("./images/plant$.jpg");
-     background-size: cover;
-     font-family: 'Righteous', cursive;
+     /* background-image: url("./images/plant$.jpg"); */
+     /* background-size: cover; */
+     /* font-family: 'Righteous', cursive; */
     height: 125vh;
     color: darkslategray;
 }
