@@ -1,10 +1,10 @@
 import React from 'react';
+import '../style.css';
 import Jumbo from '../components/Jumbotron'
 
 function Resume() {
   return <>
-    <Jumbo />
-    <div className="container-fluid p-3">
+    <div className="container-fluid p-3 color2">
       {/* <!-- name --> */}
       <h3>Maximilian A. Lewis</h3>
       {/* <!-- location --> */}

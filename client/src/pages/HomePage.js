@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Jumbo from '../components/Jumbotron'
-
 function HomePage() {
   return <>
     {/* <Jumbo /> */}
@@ -24,12 +22,12 @@ function HomePage() {
       <h4>-Maximilian A. Lewis</h4>
     </div>
   </main> */}
-    <div className="h-100 w-100">
-      <div className="jumbotron text-center">
-        <h2 className="">Welcome!</h2>
-        <Link className="nav-link btn py-0" to={"/Resume"}>Resume</Link>
-        <Link className="nav-link btn py-0" to={"/Personal"}>Personal</Link>
-        <Link className="nav-link btn py-0" to={"/Portfolio"}>Portfolio</Link>
+    <div className="h-100 w-100 text-center">
+      <div className=" jumbotron">
+        <h2 className="text-bold">Welcome!</h2>
+        <Link className="nav-link btn" to={"/Resume"}>Resume</Link>
+        <Link className="nav-link btn" to={"/Personal"}>Personal</Link>
+        <Link className="nav-link btn" to={"/Portfolio"}>Portfolio</Link>
       </div>
     </div>
   </>
