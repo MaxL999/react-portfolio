@@ -18,7 +18,7 @@ class App extends Component {
           <Route path="/Portfolio" render={() => <Portfolio />} />
           <Route path="/" render={() => <HomePage />} />
           {/* no point if switch forces all not Resume/Person/Portfolio links to homepage instead */}
-          <Route path="/404" render={() => <NoMatch />} />
+          <Route render={() => <NoMatch />} />
         </Switch>
       </Router>
     );
