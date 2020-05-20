@@ -10,11 +10,11 @@ class Portfolio extends Component {
                 name: "Rock, Paper, Scissors",
                 lang: ["Javascript", "Firebase"],
                 desc: "What? You never played rock, paper, scissors or something?",
-                git: "https://maxl999.github.io/07-RPS-Multiplayer/",
-                link1: "https://maxl999.github.io/07-RPS-Multiplayer/",
-                link1Name: "Fight!",
-                link2: "#",
-                link2Name: "TEST"
+                git: "https://github.com/MaxL999/07-RPS-Multiplayer",
+                link1: "https://maxl999.github.io/07-RPS-Multiplayer/singleplayer.html",
+                link1Name: "Singleplayer",
+                link2: "https://maxl999.github.io/07-RPS-Multiplayer/",
+                link2Name: "Multiplayer"
             }, {
                 name: "Hangman!",
                 lang: ["Javascript"],
