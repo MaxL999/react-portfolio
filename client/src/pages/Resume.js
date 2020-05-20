@@ -1,6 +1,4 @@
 import React from 'react';
-import '../style.css';
-import Jumbo from '../components/Jumbotron'
 import Navbar from '../components/Navbar';
 
 function Resume() {

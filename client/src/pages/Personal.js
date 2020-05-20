@@ -1,10 +1,8 @@
 import React from 'react';
-import Jumbo from '../components/Jumbotron'
 import Navbar from '../components/Navbar';
 
 function Personal() {
   return <>
-    {/* <Jumbo /> */}
     <Navbar />
     <div className="card m-3">
       <div className="card-header">
