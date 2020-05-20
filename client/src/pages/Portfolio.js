@@ -20,7 +20,7 @@ class Portfolio extends Component {
                 lang: ["Javascript"],
                 desc: "A classic hangman game that can be accessed on a webpage or directly thorugh a terminal using Node.",
                 git: "https://github.com/MaxL999/3-WordGuess",
-                link: "",
+                link: "https://maxl999.github.io/3-WordGuess/",
                 link1Name: "Webpage",
                 link2: false,
                 link2Name: false
