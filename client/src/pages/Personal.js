@@ -1,9 +1,13 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 import Navbar from '../components/Navbar';
 
 function Personal() {
   return <>
     <Navbar />
+    <a href='#section1'> Go to section 1 </a>
+    <a href='#section2'> Go to section 2 </a>
     <div className="card m-3">
       <div className="card-header">
         <h2>Maximilian A. Lewis</h2>
@@ -17,6 +21,19 @@ function Personal() {
         <p className="card-text"> Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
       </div>
     </div>
+    
+    <div className="min-height">
+      <ScrollableAnchor id={'section1'} >
+        <div> Hello World </div>
+      </ScrollableAnchor>
+    </div>
+    <div className="min-height">
+    <ScrollableAnchor id={'section2'}>
+      <div> How are you world? </div>
+    </ScrollableAnchor>
+    </div>
+
+
   </>
 }
 
