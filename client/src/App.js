@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import "./style.css";
 
 import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";
@@ -13,12 +14,12 @@ class App extends Component {
     return (
       <Router>
         <Switch>
+          <Route exact path="/" render={() => <HomePage />} />
           <Route path="/Resume" render={() => <Resume />} />
           <Route path="/Personal" render={() => <Personal />} />
           <Route path="/Portfolio" render={() => <Portfolio />} />
-          <Route path="/" render={() => <HomePage />} />
-          {/* no point if switch forces all not Resume/Person/Portfolio links to homepage instead */}
-          <Route render={() => <NoMatch />} />
+          {/* 404 redirect */}
+          <Route component={NoMatch} />
         </Switch>
       </Router>
     );
