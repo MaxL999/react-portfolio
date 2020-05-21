@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Personal() {
   return <>
@@ -23,23 +24,34 @@ function Personal() {
     </div> */}
 
     {/* d-none d-md-block means "this isnt displayed unless size md or larger, then its a block" */}
-    <nav className="d-none d-md-block">
-      <ul>
-        <li><a href='#section1'> Go to section 1 </a></li>
-        <li><a href='#section2'> Go to section 2 </a></li>
-      </ul>
-    </nav>
 
-    <ScrollableAnchor id={'section1'} >
-      <div className="min-height">
-        <div> Hello World </div>
+
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-3 border">
+          <nav className="d-none d-md-block">
+            <ul>
+              <li><a href='#section1'> Go to section 1 </a></li>
+              <li><a href='#section2'> Go to section 2 </a></li>
+            </ul>
+          </nav>
+        </div>
+        <div className="col-md-9 border">
+          <ScrollableAnchor id={'section1'} >
+            <div className="min-height">
+              <div> Hello World </div>
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'section2'}>
+            <div className="min-height">
+              <div> How are you world? </div>
+            </div>
+          </ScrollableAnchor>
+        </div>
       </div>
-    </ScrollableAnchor>
-    <ScrollableAnchor id={'section2'}>
-      <div className="min-height">
-        <div> How are you world? </div>
-      </div>
-    </ScrollableAnchor>
+    </div>
+
+    <Footer />
 
   </>
 }
