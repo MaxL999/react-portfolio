@@ -14,9 +14,9 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" render={() => <HomePage />} />
-          <Route path="/Resume" render={() => <Resume />} />
-          <Route path="/Personal" render={() => <Personal />} />
+          <Route exact path="/" render={HomePage} />
+          <Route path="/Resume" render={Resume} />
+          <Route path="/Personal" render={Personal} />
           <Route path="/Portfolio" render={() => <Portfolio />} />
           {/* 404 redirect */}
           <Route component={NoMatch} />
