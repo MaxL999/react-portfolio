@@ -8,6 +8,12 @@ function Personal() {
   return <>
     <Navbar />
 
+    {/* about
+    experience
+    education
+    skills
+    Interests
+    certifications */}
 
     {/* <div className="card m-3">
       <div className="card-header">
@@ -25,16 +31,20 @@ function Personal() {
 
     {/* d-none d-md-block means "this isnt displayed unless size md or larger, then its a block" */}
 
-
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-3 border">
-          <nav className="d-none d-md-block">
-            <ul>
+          <div className="">
+          {/* <img src="" alt="" width="200" height="200" /> */}
+            <ul className="mt-5 sidebar">
               <li><a href='#section1'> Go to section 1 </a></li>
               <li><a href='#section2'> Go to section 2 </a></li>
+              <li><a href='#section3'> Go to section 3 </a></li>
+              <li><a href='#section4'> Go to section 4 </a></li>
+              <li><a href='#section5'> Go to section 5 </a></li>
+              <li><a href='#section6'> Go to section 6 </a></li>
             </ul>
-          </nav>
+          </div>
         </div>
         <div className="col-md-9 border">
           <ScrollableAnchor id={'section1'} >
@@ -43,6 +53,26 @@ function Personal() {
             </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'section2'}>
+            <div className="min-height">
+              <div> How are you world? </div>
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'section3'}>
+            <div className="min-height">
+              <div> How are you world? </div>
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'section4'}>
+            <div className="min-height">
+              <div> How are you world? </div>
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'section5'}>
+            <div className="min-height">
+              <div> How are you world? </div>
+            </div>
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'section6'}>
             <div className="min-height">
               <div> How are you world? </div>
             </div>

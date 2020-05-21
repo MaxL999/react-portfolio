@@ -4,13 +4,22 @@
 
 .min-height{
     min-height: 100vh;
-    max-height: 100vh;
 }
 
 .height{
     min-height: 100vh;
     max-height: 100vh;
 } 
+
+.sidebar{
+    position: fixed;
+}
+
+@media only screen and (max-width : 768px) {
+    .sidebar {
+        position: relative;
+    }
+}
 
 /* 
 body{
