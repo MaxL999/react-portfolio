@@ -35,8 +35,8 @@ function Personal() {
 
     <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-3 border">
-          <div className="sidebar border text-center mt-5 p-2">
+        <div className="col-lg-3 border d-flex justify-content-center">
+          <div className="sidebar border mt-5 p-2">
             <img src={placeholder} alt="" width="200" height="200" />
 
             <ul className="border">

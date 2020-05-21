@@ -61,7 +61,7 @@ class Portfolio extends Component {
                 <Navbar />
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="card-deck px-3">
+                        <div className="card-deck m-0">
                             {this.state.portfolio.map((project, i) => (
                                 <PortfolioDisplay {...project} className="col-md-4 col-xl-3s" key={i} />
                             ))}
