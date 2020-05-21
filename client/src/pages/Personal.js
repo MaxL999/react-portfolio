@@ -4,6 +4,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+import placeholder from '../img/placeholder';
+
 function Personal() {
   return <>
     <Navbar />
@@ -33,10 +35,11 @@ function Personal() {
 
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-3 border">
-          <div className="">
-          {/* <img src="" alt="" width="200" height="200" /> */}
-            <ul className="mt-5 sidebar">
+        <div className="col-lg-3 border">
+          <div className="sidebar border text-center mt-5 p-2">
+            <img src={placeholder} alt="" width="200" height="200" />
+
+            <ul className="border">
               <li><a href='#section1'> Go to section 1 </a></li>
               <li><a href='#section2'> Go to section 2 </a></li>
               <li><a href='#section3'> Go to section 3 </a></li>
@@ -46,7 +49,7 @@ function Personal() {
             </ul>
           </div>
         </div>
-        <div className="col-md-9 border">
+        <div className="col-lg-9 border">
           <ScrollableAnchor id={'section1'} >
             <div className="min-height">
               <div> Hello World </div>
