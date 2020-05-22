@@ -31,14 +31,14 @@ function Personal() {
 
     <div className="container-fluid p-0">
 
-      <div className="row">
-        <div className="col-md-4 border p-0 d-flex justify-content-center">
+      <div className="row m-0">
+        <div className="col-md-4 border p-0 m-0 d-flex justify-content-center">
           <div className="sidebar row my-3 ml-1 p-2 d-flex justify-content-center">
             <div className="col-6 col-md-12 d-flex justify-content-center p-2">
               <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
             </div>
             <div className="col-6 col-md-12 d-flex justify-content-center p-2">
-              <ul className="">
+              <ul className="mt-3">
                 <li><a href='#About'>About</a></li>
                 <li><a href='#Interests'>Interests</a></li>
                 <li><a href='#section3'> Go to section 3 </a></li>
