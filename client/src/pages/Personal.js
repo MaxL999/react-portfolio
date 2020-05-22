@@ -32,9 +32,9 @@ function Personal() {
     <div className="container-fluid">
 
       <div className="row">
-        <div className="col-lg-3 border p-0 d-flex justify-content-center">
-          <section className="sidebar border my-5 p-2">
-            <img src={placeholder} alt="" width="200" height="200" />
+        <div className="col-lg-3 border p-0 d-flex justify-content-center p-4">
+          <div className="sidebar border p-2">
+            <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
 
             <ul className="border">
               <li><a href='#About'>About</a></li>
@@ -43,7 +43,7 @@ function Personal() {
               <li><a href='#section4'> Go to section 4 </a></li>
               <li><a href='#section5'> Go to section 5 </a></li> */}
             </ul>
-          </section>
+          </div>
         </div>
         <div className="col-lg-9 border p-0 m-0">
           <ScrollableAnchor id={'About'} >
