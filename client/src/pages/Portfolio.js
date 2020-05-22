@@ -18,12 +18,12 @@ class Portfolio extends Component {
             }, {
                 name: "Hangman!",
                 lang: ["Javascript"],
-                desc: "A classic hangman game made with constructors that can be accessed on a webpage or directly thorugh a terminal using Node.",
+                desc: "A classic hangman game made with constructors that can be accessed on a webpage or directly thorugh a terminal using Node.js",
                 git: "https://github.com/MaxL999/3-WordGuess",
                 link1: "https://maxl999.github.io/3-WordGuess/",
                 link1Name: "Webpage",
-                link2: false,
-                link2Name: false
+                link2: "https://github.com/MaxL999/9-hangman.node",
+                link2Name: "Terminal Proof"
             }, {
                 name: "Minesweeper",
                 lang: ["Javascript"],
@@ -61,7 +61,7 @@ class Portfolio extends Component {
                 <Navbar />
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="card-deck px-3">
+                        <div className="card-deck m-0">
                             {this.state.portfolio.map((project, i) => (
                                 <PortfolioDisplay {...project} className="col-md-4 col-xl-3s" key={i} />
                             ))}
