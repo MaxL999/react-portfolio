@@ -29,23 +29,28 @@ function Personal() {
     skills
     certifications */}
 
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
 
       <div className="row">
-        <div className="col-lg-3 border p-0 d-flex justify-content-center p-4">
-          <div className="sidebar border p-2">
-            <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
+        <div className="col-md-4 border p-0 d-flex justify-content-center">
+          <div className="sidebar row my-3 ml-1 p-2 d-flex justify-content-center">
+            <div className="col-6 col-md-12 d-flex justify-content-center p-2">
+              <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
+            </div>
+            <div className="col-6 col-md-12 d-flex justify-content-center p-2">
+              <ul className="">
+                <li><a href='#About'>About</a></li>
+                <li><a href='#Interests'>Interests</a></li>
+                <li><a href='#section3'> Go to section 3 </a></li>
+                <li><a href='#section4'> Go to section 4 </a></li>
+                <li><a href='#section5'> Go to section 5 </a></li>
+              </ul>
+            </div>
 
-            <ul className="border">
-              <li><a href='#About'>About</a></li>
-              <li><a href='#Interests'>Interests</a></li>
-              {/* <li><a href='#section3'> Go to section 3 </a></li>
-              <li><a href='#section4'> Go to section 4 </a></li>
-              <li><a href='#section5'> Go to section 5 </a></li> */}
-            </ul>
+
           </div>
         </div>
-        <div className="col-lg-9 border p-0 m-0">
+        <div className="col-md-8 border p-0 m-0">
           <ScrollableAnchor id={'About'} >
             <div className="min-height mb-1 d-flex align-items-center">
               <div className="p-5">
