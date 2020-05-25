@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch, } from "react-router-dom";
+
+// import { useLocation } from 'react-router'
+// import { useTransition, animated } from 'react-spring'
+
 import "./style.css";
 
 import HomePage from "./pages/HomePage";
@@ -8,22 +12,17 @@ import Personal from "./pages/Personal";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./components/NoMatch";
 
-class App extends Component {
-
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/" render={HomePage} />
-          <Route path="/Resume" render={Resume} />
-          <Route path="/Personal" render={Personal} />
-          <Route path="/Portfolio" render={() => <Portfolio />} />
-          {/* 404 redirect */}
-          <Route component={NoMatch} />
-        </Switch>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <Switch>
+      <Route exact path="/" render={HomePage} />
+      <Route path="/Resume" render={Resume} />
+      <Route path="/Personal" render={Personal} />
+      <Route path="/Portfolio" render={() => <Portfolio />} />
+      {/* 404 redirect */}
+      <Route component={NoMatch} />
+    </Switch>
+  );
 }
 
 export default App;
