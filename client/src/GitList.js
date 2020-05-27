@@ -1,7 +1,7 @@
 const portfolio = [
     {
         name: "Rock, Paper, Scissors",
-        lang: ["Javascript", "Firebase"],
+        lang: ["Javascript", "JQuery", "Firebase"],
         desc: "Multiplayer is enabled through use of google firebase",
         git: "https://github.com/MaxL999/07-RPS-Multiplayer",
         link1: "https://maxl999.github.io/07-RPS-Multiplayer/singleplayer.html",
@@ -10,7 +10,7 @@ const portfolio = [
         link2Name: "Multiplayer"
     }, {
         name: "Hangman!",
-        lang: ["Javascript"],
+        lang: ["Javascript", "JQuery"],
         desc: "A classic hangman game made with constructors that can be accessed on a webpage or directly thorugh a terminal using Node.js",
         git: "https://github.com/MaxL999/3-WordGuess",
         link1: "https://maxl999.github.io/3-WordGuess/",
@@ -19,7 +19,7 @@ const portfolio = [
         link2Name: "Terminal Proof"
     }, {
         name: "Minesweeper",
-        lang: ["Javascript"],
+        lang: ["Javascript", "JQuery"],
         desc: "The classic minesweeper game",
         git: "https://github.com/MaxL999/minesweeper",
         link1: "https://maxl999.github.io/minesweeper/",
