@@ -10,15 +10,15 @@ import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";
 import Personal from "./pages/Personal";
 import Portfolio from "./pages/Portfolio";
-import NoMatch from "./components/NoMatch";
+import NoMatch from "./pages/NoMatch";
 
 function App() {
   return (
     <Switch>
       <Route exact path="/" render={HomePage} />
-      <Route path="/Resume" render={Resume} />
-      <Route path="/Personal" render={Personal} />
-      <Route path="/Portfolio" render={() => <Portfolio />} />
+      <Route exact path="/Resume" render={Resume} />
+      <Route exact path="/Personal" render={Personal} />
+      <Route exact path="/Portfolio" render={() => <Portfolio />} />
       {/* 404 redirect */}
       <Route component={NoMatch} />
     </Switch>

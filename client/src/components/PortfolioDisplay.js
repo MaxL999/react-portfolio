@@ -3,7 +3,7 @@ import "../style.css"
 
 function PortfolioDisplay(props) {
     return (
-        <div className="card text-center m-2 width">
+        <div className="card text-center m-2">
 
             <div className="card-header d-flex justify-content-between">
                 <h5 className="card-title">{props.name}</h5>
@@ -38,6 +38,7 @@ function PortfolioDisplay(props) {
                 {/* <small class="text-muted">Last updated * mins ago</small> */}
 
             </div>
+            {/* </> */}
         </div>
     )
 }

@@ -23,7 +23,7 @@ function Personal() {
         <div className="col-lg-3 border p-0 m-0 d-flex justify-content-center">
 
           <div className="sidebar row d-flex justify-content-center my-3 ml-1 p-2">
-          {/* col-6 col-md-12 */}
+
             <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-2">
               <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
             </div>
