@@ -16,7 +16,12 @@
     width: inherit;
 }
 
-@media only screen and (min-width : 768px) {
+/* 576
+768
+992
+1200 */
+
+@media only screen and (min-width : 992px) {
     .sidebar {
         position: fixed;
         width: 250px;
