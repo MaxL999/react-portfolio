@@ -9,19 +9,6 @@ import placeholder from '../img/placeholder';
 function Personal() {
   return <>
     <Navbar />
-    {/* <div className="card m-3">
-      <div className="card-header">
-        <h2>Maximilian A. Lewis</h2>
-      </div>
-      <div className="card-body">
-        <h5 className="card-title">Personal Interests</h5>
-        <p className="card-text">I enjoy skeet shooting and skiing, video games suffice when the weather isnt agreable</p>
-      </div>
-      <div className="card-body">
-        <h5 className="cart-title">Born and raised</h5>
-        <p className="card-text"> Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
-      </div>
-    </div> */}
 
     {/*
     experience/ previous jobs
@@ -32,12 +19,16 @@ function Personal() {
     <div className="container-fluid p-0">
 
       <div className="row m-0">
-        <div className="col-md-4 border p-0 m-0 d-flex justify-content-center">
-          <div className="sidebar row my-3 ml-1 p-2 d-flex justify-content-center">
-            <div className="col-6 col-md-12 d-flex justify-content-center p-2">
+
+        <div className="col-lg-3 border p-0 m-0 d-flex justify-content-center">
+
+          <div className="sidebar row d-flex justify-content-center my-3 ml-1 p-2">
+
+            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-2">
               <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
             </div>
-            <div className="col-6 col-md-12 d-flex justify-content-center p-2">
+
+            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-2">
               <ul className="mt-3">
                 <li><a href='#About'>About</a></li>
                 <li><a href='#Interests'>Interests</a></li>
@@ -46,11 +37,10 @@ function Personal() {
                 <li><a href='#section5'> Go to section 5 </a></li>
               </ul>
             </div>
-
-
           </div>
         </div>
-        <div className="col-md-8 border p-0 m-0">
+
+        <div className="col-lg-9 border p-0 m-0">
           <ScrollableAnchor id={'About'} >
             <div className="min-height mb-1 d-flex align-items-center">
               <div className="p-5">
