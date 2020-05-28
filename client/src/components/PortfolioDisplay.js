@@ -5,11 +5,14 @@ function PortfolioDisplay(props) {
     return (
         <div className="card text-center m-2">
 
-            <div className="card-header d-flex justify-content-between">
-                <h5 className="card-title">{props.name}</h5>
+            <div className="card-header d-flex justify-content-between align-items-center">
+                <p className="tHeavy m-0 p-0">{props.name}</p>
 
-                <a href={props.git} className="card-link btn"
-                    target="_blank" rel="noopener noreferrer">GIT</a>
+                <a href={props.git} className="btn" target="_blank" rel="noopener noreferrer">
+                    <p className="tBold text-secondary m-0 p-0">
+                        GIT
+                    </p>
+                </a>
             </div>
 
             <div className="card-body">
