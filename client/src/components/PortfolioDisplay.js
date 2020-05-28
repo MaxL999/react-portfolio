@@ -8,8 +8,8 @@ function PortfolioDisplay(props) {
             <div className="card-header d-flex justify-content-between align-items-center">
                 <p className="tHeavy m-0 p-0">{props.name}</p>
 
-                <a href={props.git} className="btn" target="_blank" rel="noopener noreferrer">
-                    <p className="tBold text-secondary m-0 p-0">
+                <a href={props.git} className="btn p-0" target="_blank" rel="noopener noreferrer">
+                    <p className="tBold text-secondary m-0">
                         GIT
                     </p>
                 </a>
@@ -17,9 +17,9 @@ function PortfolioDisplay(props) {
 
             <div className="card-body">
 
-                <h6 className="text-muted d-flex justify-content-around">
+                <h6 className="text-muted d-flex justify-content-around mb-3">
                     {props.lang.map((msg, i) => (
-                        <p key={i}>{msg}</p>
+                        <p key={i} className="m-0 tItalic">{msg}</p>
                     ))}
                 </h6>
 

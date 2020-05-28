@@ -33,6 +33,9 @@ body{
 .tLight{
     font-weight: 300;
 }
+.tMedium+{
+    font-weight: 500;
+}
 .tHeavy{
     font-weight: 700;
     font-size: large;
@@ -40,6 +43,10 @@ body{
 .tBold{
     font-weight: 900;
     font-size: x-large;
+}
+.tItalic{
+    font-weight: 500;
+    font-style: italic;
 }
 
 /* custom colors */
