@@ -5,18 +5,21 @@ function PortfolioDisplay(props) {
     return (
         <div className="card text-center m-2">
 
-            <div className="card-header d-flex justify-content-between">
-                <h5 className="card-title">{props.name}</h5>
+            <div className="card-header d-flex justify-content-between align-items-center">
+                <p className="tHeavy m-0 p-0">{props.name}</p>
 
-                <a href={props.git} className="card-link btn"
-                    target="_blank" rel="noopener noreferrer">GIT</a>
+                <a href={props.git} className="btn p-0" target="_blank" rel="noopener noreferrer">
+                    <p className="tBold text-secondary m-0">
+                        GIT
+                    </p>
+                </a>
             </div>
 
             <div className="card-body">
 
-                <h6 className="text-muted d-flex justify-content-around">
+                <h6 className="text-muted d-flex justify-content-around mb-3">
                     {props.lang.map((msg, i) => (
-                        <p key={i}>{msg}</p>
+                        <p key={i} className="m-0 tItalic">{msg}</p>
                     ))}
                 </h6>
 

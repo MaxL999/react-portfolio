@@ -20,16 +20,16 @@ function Personal() {
 
       <div className="row m-0">
 
-        <div className="col-lg-3 border p-0 m-0 d-flex justify-content-center">
+        <div className="col-lg-3 border d-flex justify-content-center p-0">
 
-          <div className="sidebar row d-flex justify-content-center my-3 ml-1 p-2">
+          <div className="sidebar row d-flex justify-content-center p-5">
 
-            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-2">
+            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center">
               <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
             </div>
 
-            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-2">
-              <ul className="mt-3">
+            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-0">
+              <ul className="mt-4">
                 <li><a href='#About'>About</a></li>
                 <li><a href='#Interests'>Interests</a></li>
                 <li><a href='#section3'> Go to section 3 </a></li>

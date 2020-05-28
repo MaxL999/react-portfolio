@@ -4,7 +4,7 @@ import { Route, Switch, } from "react-router-dom";
 // import { useLocation } from 'react-router'
 // import { useTransition, animated } from 'react-spring'
 
-import "./style.css";
+// import "./style.css";
 
 import HomePage from "./pages/HomePage";
 import Resume from "./pages/Resume";

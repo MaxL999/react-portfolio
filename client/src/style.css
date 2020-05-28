@@ -5,32 +5,51 @@
 .height{
     min-height: 100vh;
     max-height: 100vh;
-} 
+}
 
+/* fixed sidebar css */
 .sidebar{
     position: relative;
     width: inherit;
 }
-/* bootstrap grid breakpoints
-576
-768
-992
-1200 */
 @media only screen and (min-width : 992px) {
     .sidebar {
         position: fixed;
     }
 }
+/* bootstrap grid breakpoints
+576 sm
+768 md
+992 lg
+1200 xl*/
 
-/* 
+/* sets all standard font style from index.html google fonts import */
 body{
-    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
-.btn{
-    color:white;
-} */
 
+/* custom text classes */
+.tLight{
+    font-weight: 300;
+}
+.tMedium+{
+    font-weight: 500;
+}
+.tHeavy{
+    font-weight: 700;
+    font-size: large;
+}
+.tBold{
+    font-weight: 900;
+    font-size: x-large;
+}
+.tItalic{
+    font-weight: 500;
+    font-style: italic;
+}
 
+/* custom colors */
 /* background */
 .color1 {
     background-color: #343434;

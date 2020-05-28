@@ -16,7 +16,7 @@ const portfolio = [
         link1: "https://maxl999.github.io/3-WordGuess/",
         link1Name: "Webpage",
         link2: "https://github.com/MaxL999/9-hangman.node",
-        link2Name: "Terminal Proof"
+        link2Name: "Terminal"
     }, {
         name: "Minesweeper",
         lang: ["Javascript", "JQuery"],
