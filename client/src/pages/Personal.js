@@ -6,15 +6,15 @@ import Footer from '../components/Footer';
 
 import placeholder from '../img/placeholder';
 
-function Personal() {
-  return <>
-    <Navbar />
-
-    {/*
+{/*
     experience/ previous jobs
     education
     skills
     certifications */}
+
+function Personal() {
+  return <>
+    <Navbar />
 
     <div className="container-fluid p-0">
 

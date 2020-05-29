@@ -1,10 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+    const location = useLocation()
+    const path = location.pathname
+
     return (
         <nav className="navbar navbar-light border">
             <ul className="nav">
+                {path === "/Resume"
+                    ? <li className="nav-item">
+                        <Link className="nav-link btn py-0" to={"/Resume"}><p className="tHeavy m-0">Resume</p></Link>
+                    </li>
+                    : <li className="nav-item">
+                        <Link className="nav-link btn py-0" to={"/Resume"}><p className="tItalic m-0">Resume</p></Link>
+                    </li>
+                }
                 <li className="nav-item">
                     <Link className="nav-link btn py-0" to={"/Resume"}><p className="tHeavy m-0">Resume</p></Link>
                 </li>
