@@ -6,16 +6,14 @@ import Footer from '../components/Footer';
 
 import placeholder from '../img/placeholder';
 
-{/*
+/*
     experience/ previous jobs
     education
     skills
-    certifications */}
+    certifications */
 
 function Personal() {
-  return <>
-    <Navbar />
-
+  return (
     <div className="container-fluid p-0">
 
       <div className="row m-0">
@@ -85,9 +83,7 @@ function Personal() {
         </div>
       </div>
     </div>
-
-    <Footer />
-  </>
+  )
 }
 
 export default Personal

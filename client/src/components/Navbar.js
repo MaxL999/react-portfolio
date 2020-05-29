@@ -5,28 +5,40 @@ function Navbar() {
     const location = useLocation()
     const path = location.pathname
 
+    // render the navbar if its not index page, render the links for specific pages
     return (
-        <nav className="navbar navbar-light border">
-            <ul className="nav">
-                {path === "/Resume"
-                    ? <li className="nav-item">
-                        <Link className="nav-link btn py-0" to={"/Resume"}><p className="tHeavy m-0">Resume</p></Link>
-                    </li>
-                    : <li className="nav-item">
-                        <Link className="nav-link btn py-0" to={"/Resume"}><p className="tItalic m-0">Resume</p></Link>
-                    </li>
-                }
-                <li className="nav-item">
-                    <Link className="nav-link btn py-0" to={"/Resume"}><p className="tHeavy m-0">Resume</p></Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link btn py-0" to={"/Personal"}><p className="tHeavy m-0">Personal</p></Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link btn py-0" to={"/Portfolio"}><p className="tHeavy m-0">Portfolio</p></Link>
-                </li>
-            </ul>
-        </nav>
+        <>
+            {path !== "/" &&
+                <nav className="navbar navbar-light border">
+                    <ul className="nav">
+                        {path === "/Resume"
+                            ? <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Resume"}><p className="tHeavy m-0">Resume</p></Link>
+                            </li>
+                            : <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Resume"}><p className="tItalic m-0">Resume</p></Link>
+                            </li>
+                        }
+                        {path === "/Personal"
+                            ? <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Personal"}><p className="tHeavy m-0">Personal</p></Link>
+                            </li>
+                            : <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Personal"}><p className="tItalic m-0">Personal</p></Link>
+                            </li>
+                        }
+                        {path === "/Portfolio"
+                            ? <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Portfolio"}><p className="tHeavy m-0">Portfolio</p></Link>
+                            </li>
+                            : <li className="nav-item">
+                                <Link className="nav-link py-0" to={"/Portfolio"}><p className="tItalic m-0">Portfolio</p></Link>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </>
     )
 }
 

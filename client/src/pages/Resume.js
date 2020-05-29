@@ -17,8 +17,6 @@ import Navbar from '../components/Navbar';
 
 function Resume() {
   return (
-    <>
-      <Navbar />
       <div className="card m-3">
         <div className="card-header">
           <h2>Maximilian A. Lewis</h2>
@@ -32,7 +30,6 @@ function Resume() {
           <p className="card-text"> Max.a.lewis98@gmail.com</p>
         </div>
       </div>
-    </>
   )
 }
 

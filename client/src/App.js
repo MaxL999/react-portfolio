@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      {/* <Navbar /> */}
+      <Navbar />
       <Switch>
         <Route exact path="/" render={HomePage} />
         <Route exact path="/Resume" render={Resume} />
