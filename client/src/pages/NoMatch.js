@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Navbar from '../components/Navbar';
-
 function NoMatch({ location }) {
     return (
         <div className="card p-3 m-2 jumbotron">

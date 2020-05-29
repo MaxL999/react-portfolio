@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar'
-
 import portfolio from "../GitList"
 import PortfolioDisplay from "../components/PortfolioDisplay"
 
