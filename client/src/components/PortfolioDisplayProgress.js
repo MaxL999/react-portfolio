@@ -13,7 +13,7 @@ function PortfolioDisplayProgress({ progress }) {
             label={<p className="tItalic m-0">Partial</p>} />;
     } else {
         return <ProgressBar variant="danger" now={progress} animated
-            label={<p className="tItalic p-0">Unfinished</p>} />;
+            label={<p className="tItalic m-0">Unfinished</p>} />;
     }
 }
 
