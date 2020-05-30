@@ -1,11 +1,10 @@
 import React from 'react';
-import ProgressBar from 'react-bootstrap/ProgressBar';
 
 import PortfolioDisplayProgress from './PortfolioDisplayProgress';
 
 function PortfolioDisplay(props) {
     return (
-        <div className="card text-center m-2">
+        <div className="card text-center h-100">
 
             <div className="card-header d-flex justify-content-between align-items-center">
                 <p className="tHeavy m-0 p-0">{props.name}</p>

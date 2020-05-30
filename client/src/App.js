@@ -11,6 +11,8 @@ import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
 
+import "./style.css"
+
 function App() {
   return (
     <Router>
