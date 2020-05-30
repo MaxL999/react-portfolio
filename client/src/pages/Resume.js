@@ -35,26 +35,22 @@ function Resume() {
     //     <p className="card-text"> Max.a.lewis98@gmail.com</p>
     //   </div>
     // </div>
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       {/* name intro */}
-      <div className="row grey">
-        <div className="col">
-          <div class="w-100 text-center py-5">
-            <h1 class="display-4">Maximilian A. Lewis</h1>
-            <p>Junior FullStack Web Developer</p>
-          </div>
-        </div>
+      <div class="w-100 text-center py-5 grey">
+        <h1 class="display-4">Maximilian A. Lewis</h1>
+        <p>Junior FullStack Web Developer</p>
       </div>
       {/* main resume */}
       <div className="row">
-        {/* sidebar */}
-        <div className="col-md-4 border">
+        {/* main content */}
+        <div className="col-md-4 order-md-2 border">
           <p>sidebar</p>
           {/* professional exerpt */}
           {/* previous jobs */}
         </div>
-        {/* main content */}
-        <div className="col-md-8 border">
+        {/* sidebar */}
+        <div className="col-md-8 order-md-1 border">
           <p>main content</p>
           {/* email, linkdin, git, websitelink */}
           {/* node bootstrap react jquery  */}

@@ -7,7 +7,12 @@
     max-height: 100vh;
 }
 
-/* fixed sidebar css */
+/* bootstrap grid breakpoints
+576 sm
+768 md
+992 lg
+1200 xl*/
+/* personal sidebar css */
 .sidebar{
     position: relative;
     width: inherit;
@@ -17,11 +22,6 @@
         position: fixed;
     }
 }
-/* bootstrap grid breakpoints
-576 sm
-768 md
-992 lg
-1200 xl*/
 
 /* sets all standard font style from index.html google fonts import */
 body{

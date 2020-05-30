@@ -12,9 +12,9 @@ function Personal() {
 
         <div className="col-lg-3 border d-flex justify-content-center p-0">
 
-          <div className="sidebar row d-flex justify-content-center p-5">
+          <div className="row sidebar d-flex justify-content-center p-5">
 
-            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center">
+            <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-0">
               <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
             </div>
 
@@ -31,6 +31,7 @@ function Personal() {
         </div>
 
         <div className="col-lg-9 border p-0 m-0">
+
           <ScrollableAnchor id={'About'} >
             <div className="min-height mb-1 d-flex align-items-center">
               <div className="p-5">

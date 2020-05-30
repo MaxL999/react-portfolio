@@ -28,6 +28,9 @@ function PortfolioDisplay(props) {
 
             </div>
 
+            {/* put updated time or a color indicator for how finished the project is */}
+            <PortfolioDisplayProgress progress={props.progress} />
+
             <div className="card-footer d-flex justify-content-start">
 
                 <div className="d-block">
@@ -41,12 +44,9 @@ function PortfolioDisplay(props) {
                     }
                 </div>
 
-                {/* put updated time or a color indicator for how finished the project is */}
-
                 {/* <small class="text-muted">Last updated * mins ago</small> */}
 
             </div>
-            <PortfolioDisplayProgress progress={props.progress} />
         </div>
     )
 }
