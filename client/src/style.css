@@ -52,6 +52,9 @@ body{
 .grey{
     background-color: gray;
 }
+.grey2{
+    color: gray;
+}
 
 .right{
     float: right;

@@ -30,12 +30,11 @@ function Resume() {
       </div>
       {/* main resume */}
       <div className="row p-0 m-0">
-        {/* main content */}
+        {/* sidebar */}
         <div className="col-md-4 order-md-2 border p-0">
-          <p>sidebar</p>
           {/* email, linkdin, git, websitelink */}
           <div className="d-flex justify-content-center">
-            <ul className="">
+            <ul className="mt-5">
               <li>Max.a.lewis98@gmail.com</li>
               <li>480-625-5534</li>
               <li>Phoenix, Az</li>
@@ -44,16 +43,31 @@ function Resume() {
             </ul>
           </div>
           {/* node bootstrap react jquery  */}
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Skills</h5>
+              <ul className="mt-5">
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MYSQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        {/* sidebar */}
+        {/* main content */}
         <div className="col-md-8 order-md-1 border p-0">
-          <p>main content</p>
           {/* professional exerpt */}
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          <div className="p-3">
+            <h3>Undefined Header</h3>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
+          </div>
           {/* previous jobs */}
           <div class="card">
             <div class="card-body">
