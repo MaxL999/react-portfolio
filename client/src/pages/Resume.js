@@ -22,19 +22,6 @@ certifications */
 
 function Resume() {
   return (
-    // <div className="card m-3">
-    //   <div className="card-header">
-    //     <h2>Maximilian A. Lewis</h2>
-    //   </div>
-    //   <div className="card-body">
-    //     <h5 className="card-title">Anthem, Arizona</h5>
-    //     <p className="card-text">(Just north of the Phoenix city limits)</p>
-    //   </div>
-    //   <div className="card-body">
-    //     <h5 className="cart-title">480-625-5534</h5>
-    //     <p className="card-text"> Max.a.lewis98@gmail.com</p>
-    //   </div>
-    // </div>
     <div className="container-fluid p-0">
       {/* name intro */}
       <div class="w-100 text-center py-5 grey">
@@ -42,18 +29,62 @@ function Resume() {
         <p>Junior FullStack Web Developer</p>
       </div>
       {/* main resume */}
-      <div className="row">
+      <div className="row p-0 m-0">
         {/* main content */}
-        <div className="col-md-4 order-md-2 border">
+        <div className="col-md-4 order-md-2 border p-0">
           <p>sidebar</p>
-          {/* professional exerpt */}
-          {/* previous jobs */}
+          {/* email, linkdin, git, websitelink */}
+          <div className="d-flex justify-content-center">
+            <ul className="">
+              <li>Max.a.lewis98@gmail.com</li>
+              <li>480-625-5534</li>
+              <li>Phoenix, Az</li>
+              <li><a href='https://github.com/MaxL999' target="_blank">Github</a></li>
+              <li><a href='maxlewisportfolio.herokuapp.com'>maxlewisportfolio.herokuapp.com</a></li>
+            </ul>
+          </div>
+          {/* node bootstrap react jquery  */}
         </div>
         {/* sidebar */}
-        <div className="col-md-8 order-md-1 border">
+        <div className="col-md-8 order-md-1 border p-0">
           <p>main content</p>
-          {/* email, linkdin, git, websitelink */}
-          {/* node bootstrap react jquery  */}
+          {/* professional exerpt */}
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          {/* previous jobs */}
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Job</h5>
+              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Job</h5>
+              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Job</h5>
+              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
