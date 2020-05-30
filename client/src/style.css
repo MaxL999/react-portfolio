@@ -49,6 +49,14 @@ body{
     font-style: italic;
 }
 
+.grey{
+    background-color: gray;
+}
+
+.right{
+    float: right;
+}
+
 /* custom colors */
 /* background */
 .color1 {

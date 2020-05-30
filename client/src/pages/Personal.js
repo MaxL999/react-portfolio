@@ -1,21 +1,11 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
 import placeholder from '../img/placeholder';
 
+// should be filled with the fun personal info, resume is professional
 function Personal() {
-  return <>
-    <Navbar />
-
-    {/*
-    experience/ previous jobs
-    education
-    skills
-    certifications */}
-
+  return (
     <div className="container-fluid p-0">
 
       <div className="row m-0">
@@ -85,9 +75,7 @@ function Personal() {
         </div>
       </div>
     </div>
-
-    <Footer />
-  </>
+  )
 }
 
 export default Personal
