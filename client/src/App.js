@@ -16,10 +16,10 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/" render={HomePage} />
-        <Route exact path="/Resume" render={Resume} />
-        <Route exact path="/Personal" render={Personal} />
-        <Route exact path="/Portfolio" render={Portfolio} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/Resume" component={Resume} />
+        <Route exact path="/Personal" component={Personal} />
+        <Route exact path="/Portfolio" component={Portfolio} />
         {/* 404 redirect */}
         <Route component={NoMatch} />
       </Switch>

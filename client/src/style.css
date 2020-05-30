@@ -53,6 +53,10 @@ body{
     background-color: gray;
 }
 
+.right{
+    float: right;
+}
+
 /* custom colors */
 /* background */
 .color1 {

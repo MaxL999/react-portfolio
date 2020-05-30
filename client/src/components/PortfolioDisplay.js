@@ -1,5 +1,7 @@
 import React from 'react';
-import "../style.css"
+import ProgressBar from 'react-bootstrap/ProgressBar';
+
+import PortfolioDisplayProgress from './PortfolioDisplayProgress';
 
 function PortfolioDisplay(props) {
     return (
@@ -29,19 +31,23 @@ function PortfolioDisplay(props) {
 
             <div className="card-footer d-flex justify-content-start">
 
-                <a href={props.link1} className="btn btn-primary m-1"
-                    target="_blank" rel="noopener noreferrer">{props.link1Name}</a>
+                <div className="d-block">
+                    <a href={props.link1} className="btn btn-primary m-1"
+                        target="_blank" rel="noopener noreferrer">{props.link1Name}</a>
 
-                {props.link2 &&
-                    <a href={props.link2} className="btn btn-primary m-1"
-                        target="_blank" rel="noopener noreferrer">{props.link2Name}
-                    </a>}
+                    {props.link2 &&
+                        <a href={props.link2} className="btn btn-primary m-1"
+                            target="_blank" rel="noopener noreferrer">{props.link2Name}
+                        </a>
+                    }
+                </div>
 
                 {/* put updated time or a color indicator for how finished the project is */}
+
                 {/* <small class="text-muted">Last updated * mins ago</small> */}
 
             </div>
-            {/* </> */}
+            <PortfolioDisplayProgress progress={props.progress} />
         </div>
     )
 }

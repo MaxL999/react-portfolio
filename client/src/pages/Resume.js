@@ -48,14 +48,16 @@ function Resume() {
       {/* main resume */}
       <div className="row">
         {/* sidebar */}
-        <div className="col">
-          {/* email, linkdin, git, websitelink */}
-          {/* node bootstrap react jquery  */}
-        </div>
-        {/* main content */}
-        <div className="col">
+        <div className="col-md-4 border">
+          <p>sidebar</p>
           {/* professional exerpt */}
           {/* previous jobs */}
+        </div>
+        {/* main content */}
+        <div className="col-md-8 border">
+          <p>main content</p>
+          {/* email, linkdin, git, websitelink */}
+          {/* node bootstrap react jquery  */}
         </div>
       </div>
     </div>

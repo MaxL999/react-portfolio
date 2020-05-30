@@ -7,7 +7,8 @@ const portfolio = [
         link1: "https://maxl999.github.io/07-RPS-Multiplayer/singleplayer.html",
         link1Name: "Singleplayer",
         link2: "https://maxl999.github.io/07-RPS-Multiplayer/",
-        link2Name: "Multiplayer"
+        link2Name: "Multiplayer",
+        progress: 80
     }, {
         name: "Hangman!",
         lang: ["Javascript", "JQuery"],
@@ -16,7 +17,8 @@ const portfolio = [
         link1: "https://maxl999.github.io/3-WordGuess/",
         link1Name: "Webpage",
         link2: "https://github.com/MaxL999/9-hangman.node",
-        link2Name: "Terminal"
+        link2Name: "Terminal",
+        progress: 80
     }, {
         name: "Minesweeper",
         lang: ["Javascript", "JQuery"],
@@ -25,7 +27,8 @@ const portfolio = [
         link1: "https://maxl999.github.io/minesweeper/",
         link1Name: "Minesweeper",
         link2: false,
-        link2Name: false
+        link2Name: false,
+        progress: 80
     }, {
         name: "Burger-Breakin",
         lang: ["MYSQL", "Handlebars", "Heroku"],
@@ -34,7 +37,8 @@ const portfolio = [
         link1: "https://burger-handlebars999.herokuapp.com/",
         link1Name: "Heroku",
         link2: false,
-        link2Name: false
+        link2Name: false,
+        progress: 60
     }, {
         name: "Match Pairs",
         lang: ["React-Spring", "Heroku"],
@@ -43,7 +47,8 @@ const portfolio = [
         link1: "https://react-clickergame.herokuapp.com/",
         link1Name: "Heroku",
         link2: false,
-        link2Name: false
+        link2Name: false,
+        progress: 30
     },
 
     // {
