@@ -27,6 +27,7 @@ function Resume() {
       <div class="w-100 text-center py-5 grey">
         <h1 class="display-4">Maximilian A. Lewis</h1>
         <p>Junior FullStack Web Developer</p>
+        <a href="#">Download PDF</a>
       </div>
       {/* main resume */}
       <div className="row p-0 m-0">
@@ -34,7 +35,7 @@ function Resume() {
         <div className="col-md-4 order-md-2 border p-0">
           {/* email, linkdin, git, websitelink */}
           <div className="d-flex justify-content-center">
-            <ul className="mt-5">
+            <ul className="my-5">
               <li>Max.a.lewis98@gmail.com</li>
               <li>480-625-5534</li>
               <li>Phoenix, Az</li>
@@ -46,7 +47,7 @@ function Resume() {
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Skills</h5>
-              <ul className="mt-5">
+              <ul className="my-5">
                 <li>Javascript</li>
                 <li>React</li>
                 <li>Node</li>
@@ -60,18 +61,40 @@ function Resume() {
         {/* main content */}
         <div className="col-md-8 order-md-1 border p-0">
           {/* professional exerpt */}
-          <div className="p-3">
-            <h3>Undefined Header</h3>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          </p>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Profesional Exerpt</h3>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
+          </div>
+          {/* Education */}
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">FullStack Web Develepment</h5>
+              <h6 class="card-subtitle mb-2 text-muted">University of Arizona</h6>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Boulder Creek High School</h5>
+              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+              <p className="card-text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
+              </p>
+            </div>
           </div>
           {/* previous jobs */}
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Job</h5>
+              <h5 class="card-title">Amped Coffee Co.</h5>
               <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -81,7 +104,7 @@ function Resume() {
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Job</h5>
+              <h5 class="card-title">Fry's Grocery</h5>
               <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -91,7 +114,7 @@ function Resume() {
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Job</h5>
+              <h5 class="card-title">McDonalds</h5>
               <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

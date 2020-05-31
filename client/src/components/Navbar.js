@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ThemeContext, Themes } from '../context/ThemeContext';
+import ThemeBtn from './ThemeBtn';
 
 function Navbar() {
     const location = useLocation()
@@ -36,6 +38,9 @@ function Navbar() {
                             </li>
                         }
                     </ul>
+                    <div>
+                        <ThemeBtn />
+                    </div>
                 </nav>
             }
         </>
