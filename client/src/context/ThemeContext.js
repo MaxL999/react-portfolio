@@ -1,16 +1,15 @@
 import React from 'react';
 
+// names for custom color CSS classes
 export const Themes = {
     light: {
-        light: true,
-        foreground: "#000000",
-        background: "#eeeeee"
+        fore: "LightFore",
+        back: "LightBack"
     },
     dark: {
-        light: false,
-        foreground: "#ffffff",
-        background: "#222222"
+        fore: "DarkFore",
+        back: "DarkBack"
     }
 };
 
-export const ThemeContext = React.createContext();
+export const ThemeContext = React.createContext(Themes.light);

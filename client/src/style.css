@@ -29,7 +29,7 @@ body{
     font-weight: 400;
 }
 
-/* custom text classes */
+/* custom text font classes */
 .tLight{
     font-weight: 300;
 }
@@ -60,15 +60,26 @@ body{
     float: right;
 }
 
-/* custom colors */
-/* background */
-.color1 {
-    background-color: #343434;
-}
-/* foreground */
-.color2 {
-    background-color: #4C4C4C;
-}
+/* dark colors */
+    /* background */
+    .DarkBack {
+        background-color: #343434;
+    }
+    /* foreground */
+    .DarkFore {
+        background-color: #4C4C4C;
+    }
+/* light colors */
+    /* background */
+    .LightBack {
+        background-color: white;
+    }
+    /* foreground */
+    .LightFore {
+        background-color: lightgray;
+    }
+
+/* old */
 /* warnings */
 .color3 {
     background-color: #B3001B;

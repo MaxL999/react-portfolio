@@ -1,16 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { ThemeContext, Themes } from '../context/ThemeContext';
 
 function ThemeBtn() {
     const { theme, setTheme } = useContext(ThemeContext)
+    const input = useRef();
+
     return (
-        <button
-            onClick={() => {
-                theme.light ? setTheme(Themes.dark) : setTheme(Themes.light);
-                console.log(theme)
-            }}>
-            Toggle Theme
-        </button>
+        <input type="range" min="0" max="1" ref={input}
+            onChange={() => {
+                switch (input.current.valueAsNumber) {
+                    case 0:
+                        setTheme(Themes.dark)
+                        break;
+                    case 1:
+                        setTheme(Themes.light)
+                        break;
+                }
+            }} />
     );
 }
 

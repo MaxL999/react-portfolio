@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import portfolio from "../GitList"
 import PortfolioDisplay from "../components/PortfolioDisplay"
 
+import portfolio from "../GitList"
+import { ThemeContext } from '../context/ThemeContext';
+
 function Portfolio() {
+    const { theme } = useContext(ThemeContext)
+
     return (
-        <div className="container-fluid p-0">
+        <div className={"container-fluid p-0 "+theme.back}>
             <div className="row m-0">
                 {portfolio.map((project, i) => (
                     <div className="col-md-6 col-xl-4 p-2" key={i}>

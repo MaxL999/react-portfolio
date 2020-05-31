@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ThemeBtn from './ThemeBtn';
+import { ThemeContext } from '../context/ThemeContext';
 
 function Navbar() {
     const location = useLocation()
     const path = location.pathname
 
+    const { theme } = useContext(ThemeContext)
+
     // render the navbar if its not index page, render the links for specific pages
     return (
         <>
             {path !== "/" &&
-                <nav className="navbar navbar-light border">
+                <nav className={"navbar navbar-light border "+theme.fore}>
                     <ul className="nav">
                         {path === "/Resume"
                             ? <li className="nav-item">
