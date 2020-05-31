@@ -1,31 +1,26 @@
 import React from 'react';
 
-/* <!-- name --> */
-/* <!-- location --> */
-/* <!-- phone, email --> */
-/* <!-- linkdin github |-->
-        <!-- summary  faux  \/-->
-        <!-- Web Developer eager to master new tools, techniques, and technologies to create robust, elegant solutions for customers, clients, and users. Strives to capitalize on the strengths of all team members whether in a lead or individual contributor role. Drawing on a background in teaching, business leadership, and customer service, approaches each project with curiosity and empathy to deliver results and experiences that exceed expectations. -->
-        <!-- technical -->
-        <!-- projects -->
-        <!-- experiance -->
-        <!-- education -->
-            <!-- boulder creek -->
-            <!-- that one mechanical certification -->
-            the bootcamp cert */
+  //       < !--summary  faux  \/-->
+  // < !--Web Developer eager to master new tools, techniques, and technologies to create robust, elegant solutions for customers, clients, and users.Strives to capitalize on the strengths of all team members whether in a lead or individual contributor role.Drawing on a background in teaching, business leadership, and customer service, approaches each project with curiosity and empathy to deliver results and experiences that exceed expectations. -- >
+  //       < !--technical -->
+  //       < !--projects -->
+  //       < !--experiance -->
+  //       < !--education -->
+  //           < !--boulder creek-- >
+  //           < !--that one mechanical certification-- >
+  // the bootcamp cert * /
 /*
 experience/ previous jobs
 education
 skills
 certifications */
 
-
 function Resume() {
   return (
     <div className="container-fluid p-0">
       {/* name intro */}
-      <div class="w-100 text-center py-5 grey">
-        <h1 class="display-4">Maximilian A. Lewis</h1>
+      <div className="w-100 text-center py-5 grey">
+        <h1 className="display-4">Maximilian A. Lewis</h1>
         <p>Junior FullStack Web Developer</p>
         <a href="#">Download PDF</a>
       </div>
@@ -44,9 +39,9 @@ function Resume() {
             </ul>
           </div>
           {/* node bootstrap react jquery  */}
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Skills</h5>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Skills</h5>
               <ul className="my-5">
                 <li>Javascript</li>
                 <li>React</li>
@@ -61,9 +56,9 @@ function Resume() {
         {/* main content */}
         <div className="col-md-8 order-md-1 border p-0">
           {/* professional exerpt */}
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Profesional Exerpt</h3>
+          <div className="card">
+            <div className="card-body">
+              <h3 className="card-title">Profesional Exerpt</h3>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
@@ -71,20 +66,20 @@ function Resume() {
             </div>
           </div>
           {/* Education */}
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">FullStack Web Develepment</h5>
-              <h6 class="card-subtitle mb-2 text-muted">University of Arizona</h6>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">FullStack Web Develepment</h5>
+              <h6 className="card-subtitle mb-2 text-muted">University of Arizona</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Boulder Creek High School</h5>
-              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Boulder Creek High School</h5>
+              <h6 className="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
@@ -92,30 +87,30 @@ function Resume() {
             </div>
           </div>
           {/* previous jobs */}
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Amped Coffee Co.</h5>
-              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Amped Coffee Co.</h5>
+              <h6 className="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fry's Grocery</h5>
-              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Fry's Grocery</h5>
+              <h6 className="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">McDonalds</h5>
-              <h6 class="card-subtitle mb-2 text-muted">time- => time+</h6>
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">McDonalds</h5>
+              <h6 className="card-subtitle mb-2 text-muted">time- => time+</h6>
               <p className="card-text">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
