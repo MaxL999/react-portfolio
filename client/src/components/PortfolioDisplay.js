@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import PortfolioDisplayProgress from './PortfolioDisplayProgress';
 
-function PortfolioDisplay(props) {
-    return (
-        <div className="card text-center h-100">
+import { ThemeContext } from '../context/ThemeContext';
 
-            <div className="card-header d-flex justify-content-between align-items-center">
-                <p className="tHeavy m-0 p-0">{props.name}</p>
+function PortfolioDisplay(props) {
+    const { theme } = useContext(ThemeContext)
+
+    return (
+        <div className={"card text-center h-100" + theme.bg3}>
+
+            <div className={"card-header d-flex justify-content-between align-items-center" + theme.bg4}>
+                <p className={"tHeavy m-0 p-0" + theme.txt1}>{props.name}</p>
 
                 <a href={props.git} className="" target="_blank" rel="noopener noreferrer">
-                    <p className="tBold text-secondary m-0">
-                        GIT
-                    </p>
-                </a>
+                    <p className={"tBold m-0" + theme.txt2}>GIT</p></a>
             </div>
 
             <div className="card-body">
@@ -31,14 +32,14 @@ function PortfolioDisplay(props) {
             {/* put updated time or a color indicator for how finished the project is */}
             <PortfolioDisplayProgress progress={props.progress} />
 
-            <div className="card-footer d-flex justify-content-start">
+            <div className={"card-footer d-flex justify-content-start" + theme.bg4}>
 
                 <div className="d-block">
-                    <a href={props.link1} className="btn btn-primary m-1"
+                    <a href={props.link1} className={"btn m-1" + theme.btn1}
                         target="_blank" rel="noopener noreferrer">{props.link1Name}</a>
 
                     {props.link2 &&
-                        <a href={props.link2} className="btn btn-primary m-1"
+                        <a href={props.link2} className={"btn m-1" + theme.btn1}
                             target="_blank" rel="noopener noreferrer">{props.link2Name}
                         </a>
                     }
