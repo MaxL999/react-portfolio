@@ -21,7 +21,7 @@ function PortfolioDisplay(props) {
 
                 <h6 className="text-muted d-flex justify-content-around mb-3">
                     {props.lang.map((msg, i) => (
-                        <p key={i} className="m-0 tItalic">{msg}</p>
+                        <p key={i} className={"m-0 tItalic" + theme.txt1}>{msg}</p>
                     ))}
                 </h6>
 
