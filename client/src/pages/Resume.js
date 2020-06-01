@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
 
   //       < !--summary  faux  \/-->
   // < !--Web Developer eager to master new tools, techniques, and technologies to create robust, elegant solutions for customers, clients, and users.Strives to capitalize on the strengths of all team members whether in a lead or individual contributor role.Drawing on a background in teaching, business leadership, and customer service, approaches each project with curiosity and empathy to deliver results and experiences that exceed expectations. -- >
@@ -16,13 +17,15 @@ skills
 certifications */
 
 function Resume() {
+ const { theme } = useContext(ThemeContext)
+
   return (
     <div className="container-fluid p-0">
       {/* name intro */}
       <div className="w-100 text-center py-5 grey">
         <h1 className="display-4">Maximilian A. Lewis</h1>
         <p>Junior FullStack Web Developer</p>
-        <a href="#">Download PDF</a>
+        <a href="#placeholderlink">Download PDF</a>
       </div>
       {/* main resume */}
       <div className="row p-0 m-0">

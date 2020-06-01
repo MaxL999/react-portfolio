@@ -28,12 +28,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-
 /* custom text font classes */
 .tLight{
     font-weight: 300;
 }
-.tMedium+{
+.tMedium{
     font-weight: 500;
 }
 .tHeavy{
@@ -48,6 +47,69 @@ body{
     font-weight: 500;
     font-style: italic;
 }
+
+.clr1{
+    color: #ECEFF1;
+}
+.clr2{
+    color: #CFD8DC;
+}
+.clr3{
+    color: #B0BEC5;
+}
+.clr4{
+    color: #90A4AE;
+}
+.clr5{
+    color: #78909C;
+}
+.clr6{
+    color: #607D8B;
+}
+.clr7{
+    color: #546E7A;
+}
+.clr8{
+    color: #455A64;
+}
+.clr9{
+    color: #37474F;
+}
+.clr10{
+    color: #263238;
+}
+
+.Bclr1{
+    background-color: #ECEFF1;
+}
+.Bclr2{
+    background-color: #CFD8DC;
+}
+.Bclr3{
+    background-color: #B0BEC5;
+}
+.Bclr4{
+    background-color: #90A4AE;
+}
+.Bclr5{
+    background-color: #78909C;
+}
+.Bclr6{
+    background-color: #607D8B;
+}
+.Bclr7{
+    background-color: #546E7A;
+}
+.Bclr8{
+    background-color: #455A64;
+}
+.Bclr9{
+    background-color: #37474F;
+}
+.Bclr10{
+    background-color: #263238;
+}
+
 
 .grey{
     background-color: gray;

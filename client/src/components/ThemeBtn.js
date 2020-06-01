@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react'
 import { ThemeContext, Themes } from '../context/ThemeContext';
 
 function ThemeBtn() {
-    const { theme, setTheme } = useContext(ThemeContext)
+    const { setTheme } = useContext(ThemeContext)
     const input = useRef();
 
     return (

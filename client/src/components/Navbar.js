@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <>
             {path !== "/" &&
-                <nav className={"navbar navbar-light border "+theme.fore}>
+                <nav className={"navbar "+theme.fore}>
                     <ul className="nav">
                         {path === "/Resume"
                             ? <li className="nav-item">

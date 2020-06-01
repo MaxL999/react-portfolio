@@ -10,7 +10,7 @@ function Personal() {
 
       <div className="row m-0">
 
-        <div className="col-lg-3 border d-flex justify-content-center p-0">
+        <div className="col-lg-3 d-flex justify-content-center p-0">
 
           <div className="row sidebar d-flex justify-content-center p-5">
 
@@ -30,7 +30,7 @@ function Personal() {
           </div>
         </div>
 
-        <div className="col-lg-9 border p-0 m-0">
+        <div className="col-lg-9 p-0 m-0">
 
           <ScrollableAnchor id={'About'} >
             <div className="min-height mb-1 d-flex align-items-center">

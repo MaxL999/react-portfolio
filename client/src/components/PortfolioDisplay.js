@@ -9,7 +9,7 @@ function PortfolioDisplay(props) {
             <div className="card-header d-flex justify-content-between align-items-center">
                 <p className="tHeavy m-0 p-0">{props.name}</p>
 
-                <a href={props.git} className="btn p-0" target="_blank" rel="noopener noreferrer">
+                <a href={props.git} className="" target="_blank" rel="noopener noreferrer">
                     <p className="tBold text-secondary m-0">
                         GIT
                     </p>
