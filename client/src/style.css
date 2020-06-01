@@ -7,7 +7,12 @@
     max-height: 100vh;
 }
 
-/* fixed sidebar css */
+/* bootstrap grid breakpoints
+576 sm
+768 md
+992 lg
+1200 xl*/
+/* personal sidebar css */
 .sidebar{
     position: relative;
     width: inherit;
@@ -17,23 +22,17 @@
         position: fixed;
     }
 }
-/* bootstrap grid breakpoints
-576 sm
-768 md
-992 lg
-1200 xl*/
 
 /* sets all standard font style from index.html google fonts import */
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-
-/* custom text classes */
+/* custom text font classes */
 .tLight{
     font-weight: 300;
 }
-.tMedium+{
+.tMedium{
     font-weight: 500;
 }
 .tHeavy{
@@ -49,23 +48,100 @@ body{
     font-style: italic;
 }
 
+.clr1{
+    color: #ECEFF1;
+}
+.clr2{
+    color: #CFD8DC;
+}
+.clr3{
+    color: #B0BEC5;
+}
+.clr4{
+    color: #90A4AE;
+}
+.clr5{
+    color: #78909C;
+}
+.clr6{
+    color: #607D8B;
+}
+.clr7{
+    color: #546E7A;
+}
+.clr8{
+    color: #455A64;
+}
+.clr9{
+    color: #37474F;
+}
+.clr10{
+    color: #263238;
+}
+
+.Bclr1{
+    background-color: #ECEFF1;
+}
+.Bclr2{
+    background-color: #CFD8DC;
+}
+.Bclr3{
+    background-color: #B0BEC5;
+}
+.Bclr4{
+    background-color: #90A4AE;
+}
+.Bclr5{
+    background-color: #78909C;
+}
+.Bclr6{
+    background-color: #607D8B;
+}
+.Bclr7{
+    background-color: #546E7A;
+}
+.Bclr8{
+    background-color: #455A64;
+}
+.Bclr9{
+    background-color: #37474F;
+}
+.Bclr10{
+    background-color: #263238;
+}
+
+
 .grey{
     background-color: gray;
+}
+.grey2{
+    color: gray;
 }
 
 .right{
     float: right;
 }
 
-/* custom colors */
-/* background */
-.color1 {
-    background-color: #343434;
-}
-/* foreground */
-.color2 {
-    background-color: #4C4C4C;
-}
+/* dark colors */
+    /* background */
+    .DarkBack {
+        background-color: #343434;
+    }
+    /* foreground */
+    .DarkFore {
+        background-color: #4C4C4C;
+    }
+/* light colors */
+    /* background */
+    .LightBack {
+        background-color: white;
+    }
+    /* foreground */
+    .LightFore {
+        background-color: lightgray;
+    }
+
+/* old */
 /* warnings */
 .color3 {
     background-color: #B3001B;

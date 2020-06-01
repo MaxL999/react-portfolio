@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import ThemeBtn from '../components/ThemeBtn';
+import { ThemeContext } from '../context/ThemeContext';
 
 function HomePage() {
-  return <>
-    <div className="height jumbotron m-0">
+  const { theme } = useContext(ThemeContext)
+
+  return (
+    <div className={"height jumbotron m-0" + theme.fore}>
       <div className="text-center p-5">
         <h2 className="text-bold">Welcome!</h2>
-        <Link className="nav-link btn" to={"/Resume"}>Resume</Link>
-        <Link className="nav-link btn" to={"/Personal"}>Personal</Link>
-        <Link className="nav-link btn" to={"/Portfolio"}>Portfolio</Link>
+        <ThemeBtn />
+        <Link className="nav-link" to={"/Resume"}>Resume</Link>
+        <Link className="nav-link" to={"/Personal"}>Personal</Link>
+        <Link className="nav-link" to={"/Portfolio"}>Portfolio</Link>
       </div>
     </div>
-  </>
+  )
 }
 
 export default HomePage
