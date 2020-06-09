@@ -8,15 +8,18 @@ function PortfolioDisplayProgress({ progress }) {
     if (progress === 100) {
         return <ProgressBar variant="success" now={progress}
             label={<p className={"tItalic m-0" + theme.txt1}>Finished</p>} />;
+    } else if (progress > 95) {
+        return <ProgressBar variant="success" now={progress}
+            label={<p className={"tItalic m-0" + theme.txt1}>Polished</p>} />;
     } else if (progress > 75) {
         return <ProgressBar variant="success" now={progress}
             label={<p className={"tItalic m-0" + theme.txt1}>Unpolished</p>} />;
     } else if (progress > 50) {
         return <ProgressBar variant="warning" now={progress}
-            label={<p className={"tItalic m-0" + theme.txt1}>Partial</p>} />;
+            label={<p className={"tItalic m-0" + theme.txt1}>Functional</p>} />;
     } else {
         return <ProgressBar variant="danger" now={progress}
-            label={<p className={"tItalic m-0" + theme.txt1}>Unfinished</p>} />;
+            label={<p className={"tItalic m-0" + theme.txt1}>Theoretical</p>} />;
     }
 }
 
