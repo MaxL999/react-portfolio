@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
+
+import { ThemeContext } from '../context/ThemeContext';
 
 import placeholder from '../img/placeholder';
 
 // should be filled with the fun personal info, resume is professional
 function Personal() {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <div className="container-fluid p-0">
 
       <div className="row m-0">
 
-        <div className="col-lg-3 d-flex justify-content-center p-0">
+        {/* the sidebar */}
+        <div className={"col-lg-3 d-flex justify-content-center p-0"+theme.bg1}>
 
           <div className="row sidebar d-flex justify-content-center p-5">
 
@@ -30,7 +35,8 @@ function Personal() {
           </div>
         </div>
 
-        <div className="col-lg-9 p-0 m-0">
+        {/* main content */}
+        <div className={"col-lg-9 p-0 m-0"+theme.bg3}>
 
           <ScrollableAnchor id={'Intro'} >
             <div className="min-height mb-1 d-flex align-items-center">
@@ -45,7 +51,7 @@ function Personal() {
             </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'About'}>
-            <div className="min-height mb-1 d-flex align-items-center">
+            <div className={"min-height mb-1 d-flex align-items-center"+theme.bg4}>
               <div className="p-4">
                 <h2>Born and raised</h2>
                 <p>Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
