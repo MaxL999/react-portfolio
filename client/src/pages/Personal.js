@@ -20,11 +20,11 @@ function Personal() {
 
             <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-0">
               <ul className="mt-4">
+                <li><a href='#Intro'>Intro</a></li>
                 <li><a href='#About'>About</a></li>
                 <li><a href='#Interests'>Interests</a></li>
-                <li><a href='#section3'> Go to section 3 </a></li>
-                <li><a href='#section4'> Go to section 4 </a></li>
-                <li><a href='#section5'> Go to section 5 </a></li>
+                {/* <li><a href='#section4'> Go to section 4 </a></li>
+                <li><a href='#section5'> Go to section 5 </a></li> */}
               </ul>
             </div>
           </div>
@@ -32,7 +32,7 @@ function Personal() {
 
         <div className="col-lg-9 p-0 m-0">
 
-          <ScrollableAnchor id={'About'} >
+          <ScrollableAnchor id={'Intro'} >
             <div className="min-height mb-1 d-flex align-items-center">
               <div className="p-5">
                 <h2>Maximilian A. Lewis</h2>
@@ -44,26 +44,23 @@ function Personal() {
               </div>
             </div>
           </ScrollableAnchor>
-          <ScrollableAnchor id={'Interests'}>
+          <ScrollableAnchor id={'About'}>
             <div className="min-height mb-1 d-flex align-items-center">
-              <div className="p-5">
-                <div className="p-4">
-                  <h2>Born and raised</h2>
-                  <p>Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
-                </div>
-                <div className="p-4">
-                  <h2>Personal Interests</h2>
-                  <p>I enjoy skeet shooting and skiing, video games suffice when the weather isnt agreable</p>
-                </div>
+              <div className="p-4">
+                <h2>Born and raised</h2>
+                <p>Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
               </div>
             </div>
           </ScrollableAnchor>
-          {/* <ScrollableAnchor id={'section3'}>
-            <div className="min-height">
-              <div> How are you world? </div>
+          <ScrollableAnchor id={'Interests'}>
+            <div className="min-height mb-1 d-flex align-items-center">
+              <div className="p-4">
+                <h2>Personal Interests</h2>
+                <p>I enjoy skeet shooting and skiing, video games suffice when the weather isnt agreable</p>
+              </div>
             </div>
           </ScrollableAnchor>
-          <ScrollableAnchor id={'section4'}>
+          {/* <ScrollableAnchor id={'section4'}>
             <div className="min-height">
               <div> How are you world? </div>
             </div>

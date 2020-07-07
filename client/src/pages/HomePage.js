@@ -7,9 +7,9 @@ function HomePage() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={"height jumbotron m-0" + theme.fore}>
+    <div className={"height jumbotron m-0" + theme.bg1}>
       <div className="text-center p-5">
-        <h2 className="text-bold">Welcome!</h2>
+        <h2 className={"text-bold" + theme.txt1}>Welcome!</h2>
         <ThemeBtn />
         <Link className="nav-link" to={"/Resume"}>Resume</Link>
         <Link className="nav-link" to={"/Personal"}>Personal</Link>
