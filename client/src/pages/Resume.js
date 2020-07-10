@@ -23,25 +23,28 @@ function Resume() {
         <p>Junior Fullstack Developer</p>
         {/* <a href="#placeholderlink">Download PDF</a> */}
       </div>
-      {/* main resume */}
+      {/* main resume row*/}
       <div className="row p-0 m-0">
-        {/* sidebar */}
+
+        {/* sidebar col*/}
         <div className="col-md-4 order-md-2 p-0">
           {/* email, linkdin, git, websitelink */}
-          <div className="d-flex justify-content-center">
-            <ul className="my-5 m-0 p-0">
-              <li>Max.a.lewis98@gmail.com</li>
-              <li>480-625-5534</li>
-              <li>Phoenix, Az</li>
-              <li><a href='https://github.com/MaxL999' target="_blank">https://github.com/MaxL999</a></li>
-              <li><a href='maxlewisportfolio.herokuapp.com'>maxlewisportfolio.herokuapp.com</a></li>
-            </ul>
+          <div className="card p-2">
+            <div className="card-body">
+              <ul className="">
+                <li>Max.a.lewis98@gmail.com</li>
+                <li>480-625-5534</li>
+                <li>Phoenix, Az</li>
+                <li><a href='https://github.com/MaxL999' target="_blank">https://github.com/MaxL999</a></li>
+                <li><a href='maxlewisportfolio.herokuapp.com'>maxlewisportfolio.herokuapp.com</a></li>
+              </ul>
+            </div>
           </div>
           {/* skills  */}
-          <div className="card">
-            <div className="card-body d-flex justify-content-center">
-              <h5 className="card-title">Skills</h5>
-              <ul className="list-group list-group-flush">
+          <div className="card p-4">
+            <h5 className="card-title">Skills</h5>
+            <div className="card-body">
+              <ul className="list-group">
                 <li className="list-group-item">Javascript</li>
                 <li className="list-group-item">React</li>
                 <li className="list-group-item">Node</li>
@@ -61,7 +64,6 @@ function Resume() {
           {/* professional exerpt */}
           <div className="card">
             <div className="card-body">
-              <h3 className="card-title">Professional Exerpt</h3>
               <p className="card-text">
                 Web Developer with a passion to learn new skills and solidify knowledge with current abilites in real business situations.
                 Currently looking to establish a career as a software developer.
@@ -71,58 +73,27 @@ function Resume() {
           {/* Education */}
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">FullStack Web Develepment</h5>
+              <h5 className="card-title">FullStack Web Develepment Bootcamp</h5>
               <h6 className="card-subtitle mb-2 text-muted">University of Arizona</h6>
-              <p className="card-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
-              </p>
             </div>
           </div>
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Boulder Creek High School</h5>
               <h6 className="card-subtitle mb-2 text-muted">2013 - 2017</h6>
-              <p className="card-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
-              </p>
             </div>
           </div>
           {/* previous jobs */}
           <div className="card">
             <div className="card-body">
+              <h3 className="card-title">Previous Employment</h3>
+              <p className="card-subtitle">Food Services and Sanitation</p>
               <h5 className="card-title">Amped Coffee Co.</h5>
-              <h6 className="card-subtitle mb-2 text-muted"></h6>
-              <p className="card-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
+              <h6 className="card-subtitle mb-2 text-muted">Febuary 2019 - April 2020</h6>
               <h5 className="card-title">Fry's Grocery</h5>
-              <h6 className="card-subtitle mb-2 text-muted">September 2016 - November 2016</h6>
-              <p className="card-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
-              </p>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <h5 className="card-title">McDonalds</h5>
               <h6 className="card-subtitle mb-2 text-muted">August 2017 - July 2018</h6>
-              <p className="card-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.""
-              </p>
+              <h5 className="card-title">McDonalds</h5>
+              <h6 className="card-subtitle mb-2 text-muted">September 2016 - November 2016</h6>
             </div>
           </div>
         </div>
