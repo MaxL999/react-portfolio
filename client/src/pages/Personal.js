@@ -4,6 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import { ThemeContext } from '../context/ThemeContext';
 
 import placeholder from '../img/placeholder';
+import tempImage from '../img/tempImage.jpg';
 
 // should be filled with the fun personal info, resume is professional
 function Personal() {
@@ -15,13 +16,14 @@ function Personal() {
       <div className="row m-0">
 
         {/* the sidebar */}
-        <div className={"col-lg-3 d-flex justify-content-center p-0"+theme.bg1}>
+        <div className={"col-lg-3 d-flex justify-content-center p-0" + theme.bg1}>
 
           <div className="row sidebar d-flex justify-content-center p-5">
 
             <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-0">
-              <img src={placeholder} className="rounded-circle" alt="" width="200" height="200" />
+              <img src={tempImage} className="rounded-circle" alt="" width="200" height="200" />
             </div>
+            <p><small>Temporary</small></p>
 
             <div className="col-12 col-sm-6 col-lg-12 d-flex justify-content-center p-0">
               <ul className="mt-4">
@@ -36,7 +38,7 @@ function Personal() {
         </div>
 
         {/* main content */}
-        <div className={"col-lg-9 p-0 m-0"+theme.bg3}>
+        <div className={"col-lg-9 p-0 m-0" + theme.bg3}>
 
           <ScrollableAnchor id={'Intro'} >
             <div className="min-height mb-1 d-flex align-items-center">
@@ -44,17 +46,17 @@ function Personal() {
                 <h2>Maximilian A. Lewis</h2>
                 <p>3753 W. Wayne Ln. 480-625-5534 Max.a.lewis98@gmail.com</p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Outgoing outdoors enthusiast and tech nerd looking to grow and expand horizons.
               </p>
               </div>
             </div>
           </ScrollableAnchor>
           <ScrollableAnchor id={'About'}>
-            <div className={"min-height mb-1 d-flex align-items-center"+theme.bg4}>
+            <div className={"min-height mb-1 d-flex align-items-center" + theme.bg4}>
               <div className="p-4">
                 <h2>Born and raised</h2>
                 <p>Originally born in Indiana, my family moved to Arizona when I was a toddler.</p>
+                <p>Raised alongside 2 brothers and 2 stepbrothers, (that explains the hobbies)</p>
               </div>
             </div>
           </ScrollableAnchor>
@@ -62,7 +64,14 @@ function Personal() {
             <div className="min-height mb-1 d-flex align-items-center">
               <div className="p-4">
                 <h2>Personal Interests</h2>
-                <p>I enjoy skeet shooting and skiing, video games suffice when the weather isnt agreable</p>
+                <p>I enjoy </p>
+                <ul className="">
+                  <li>Skeet shooting</li>
+                  <li>Hunting</li>
+                  <li>Fishing</li>
+                  <li>Board games and Video games</li>
+                  <li>and Coding!</li>
+                </ul>
               </div>
             </div>
           </ScrollableAnchor>

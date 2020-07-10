@@ -21,7 +21,7 @@ function Resume() {
       <div className="w-100 text-center py-5 border">
         <h1 className="display-4">Maximilian A. Lewis</h1>
         <p>Junior Fullstack Developer</p>
-        {/* <a href="#placeholderlink">Download PDF</a> */}
+        <button type="button" class="btn btn-lg" disabled>Download PDF(disabled)</button>
       </div>
       {/* main resume row*/}
       <div className="row p-0 m-0">
@@ -65,7 +65,7 @@ function Resume() {
           <div className="card">
             <div className="card-body">
               <p className="card-text">
-                Web Developer with a passion to learn new skills and solidify knowledge with current abilites in real business situations.
+                Open minded, friendly, and hard working Junior Web Developer with a passion to learn new skills and solidify knowledge with current abilities in real business situations.
                 Currently looking to establish a career as a software developer.
               </p>
             </div>
