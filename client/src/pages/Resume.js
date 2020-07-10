@@ -29,19 +29,21 @@ function Resume() {
         {/* sidebar col*/}
         <div className="col-md-4 order-md-2 p-0">
           {/* email, linkdin, git, websitelink */}
-          <div className="d-flex justify-content-center">
-            <ul className="my-5 m-0 p-0">
-              <li>Max.a.lewis98@gmail.com</li>
-              <li>480-625-5534</li>
-              <li>Phoenix, Az</li>
-              <li><a href='https://github.com/MaxL999' target="_blank">https://github.com/MaxL999</a></li>
-              <li><a href='maxlewisportfolio.herokuapp.com'>maxlewisportfolio.herokuapp.com</a></li>
-            </ul>
+          <div className="card d-flex justify-content-center">
+            <div className="card-body">
+              <ul className="my-5 ml-1 m-0 p-0">
+                <li>Max.a.lewis98@gmail.com</li>
+                <li>480-625-5534</li>
+                <li>Phoenix, Az</li>
+                <li><a href='https://github.com/MaxL999' target="_blank">https://github.com/MaxL999</a></li>
+                <li><a href='maxlewisportfolio.herokuapp.com'>maxlewisportfolio.herokuapp.com</a></li>
+              </ul>
+            </div>
           </div>
           {/* skills  */}
-          <div className="card">
-            <div className="card-body d-flex justify-content-center">
-              <h5 className="card-title">Skills</h5>
+          <div className="card d-flex justify-content-center align-content-center">
+            <h5 className="card-title pl-4 pt-4 mb-0">Skills</h5>
+            <div className="card-body">
               <ul className="list-group">
                 <li className="list-group-item">Javascript</li>
                 <li className="list-group-item">React</li>
