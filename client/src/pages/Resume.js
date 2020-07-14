@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 
+import resume from '../Resume.pdf'
+
 //       < !--summary  faux  \/-->
 // < !--Web Developer eager to master new tools, techniques, and technologies to create robust, 
 // elegant solutions for customers, clients, and users.Strives to capitalize on the strengths of all team 
@@ -21,7 +23,7 @@ function Resume() {
       <div className="w-100 text-center py-5 border">
         <h1 className="display-4">Maximilian A. Lewis</h1>
         <p>Junior Fullstack Developer</p>
-        <button type="button" class="btn btn-lg" disabled>Download PDF(disabled)</button>
+        <a href={resume} ><button class="btn btn-outline-dark btn-lg btn-block">Download PDF</button></a>
       </div>
       {/* main resume row*/}
       <div className="row p-0 m-0">

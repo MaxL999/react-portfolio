@@ -1,6 +1,6 @@
 import React from 'react';
 
-// names for custom color CSS classes
+// names for custom color CSS classes inside style.css
 // bg1 is background, bg4 is forground
 export const Themes = {
     light: {
