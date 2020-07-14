@@ -33,6 +33,7 @@ function Resume() {
 
 export default Resume
 
+// reference API call experience
 
 // {/* main resume row */}
 // <div className="row p-0 m-0">
