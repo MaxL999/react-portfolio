@@ -1,4 +1,4 @@
-const portfolio = [
+export default portfolio = [
     {
         name: "Rock, Paper, Scissors",
         lang: ["Javascript", "JQuery", "Firebase"],
@@ -32,8 +32,8 @@ const portfolio = [
     }, {
         name: "Burger-Breakin",
         lang: ["MYSQL", "Handlebars", "Heroku"],
-        desc: "A simple app where you can create and parse data, deployed unto the cloud with Heroku",
-        git: "https://github.com/MaxL999/12-burgerHandlebars",
+        desc: "A simple app where you can create and parse data using MySQL, deployed unto the cloud with Heroku",
+        git: "https://github.com/MaxL999/BurgerBreakIn",
         link1: "https://burger-handlebars999.herokuapp.com/",
         link1Name: "Heroku",
         link2: false,
@@ -50,6 +50,17 @@ const portfolio = [
         link2Name: false,
         progress: 30
     },
+    {
+        name: "UnBore Me",
+        lang: ["API","Bootstrap"],
+        desc: "API search for nearby events, then google maps search the exact location!",
+        git: "https://github.com/MaxL999/UnBoreMe",
+        link1: "caleb-mattson.github.io/project-01/",
+        link1Name: "Temp",
+        link2: false,
+        link2Name: false,
+        progress: 60
+    },
 
     // {
     //     name: "",
@@ -62,5 +73,3 @@ const portfolio = [
     //     link2Name: ""
     // },
 ]
-
-export default portfolio
