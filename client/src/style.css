@@ -49,104 +49,36 @@ body{
 }
 
 .clr1{
-    color: #ECEFF1;
+    color: #FFFFFF;
 }
 .clr2{
-    color: #CFD8DC;
+    color: #555555;
 }
 .clr3{
-    color: #B0BEC5;
-}
-.clr4{
-    color: #90A4AE;
-}
-.clr5{
-    color: #78909C;
-}
-.clr6{
-    color: #607D8B;
-}
-.clr7{
-    color: #546E7A;
-}
-.clr8{
-    color: #455A64;
-}
-.clr9{
-    color: #37474F;
-}
-.clr10{
-    color: #263238;
+    color: #111111;
 }
 
 .Bclr1{
-    background-color: #ECEFF1;
+    background-color: #FFFFFF;
 }
 .Bclr2{
-    background-color: #CFD8DC;
+    background-color: #CCCCCC;
 }
 .Bclr3{
-    background-color: #B0BEC5;
+    background-color: #AAAAAA;
 }
 .Bclr4{
-    background-color: #90A4AE;
+    background-color: #999999;
 }
 .Bclr5{
-    background-color: #78909C;
+    background-color: #777777;
 }
 .Bclr6{
-    background-color: #607D8B;
+    background-color: #555555;
 }
 .Bclr7{
-    background-color: #546E7A;
+    background-color: #333333;
 }
 .Bclr8{
-    background-color: #455A64;
+    background-color: #111111;
 }
-.Bclr9{
-    background-color: #37474F;
-}
-.Bclr10{
-    background-color: #263238;
-}
-
-
-/* .grey{
-    background-color: gray;
-}
-.grey2{
-    color: gray;
-}
-
-.right{
-    float: right;
-} */
-
-/* dark colors */
-    /* background */
-    /* .DarkBack {
-        background-color: #343434;
-    } */
-    /* foreground */
-    /* .DarkFore {
-        background-color: #4C4C4C;
-    } */
-/* light colors */
-    /* background */
-    /* .LightBack {
-        background-color: white;
-    } */
-    /* foreground */
-    /* .LightFore {
-        background-color: lightgray;
-    } */
-
-/* old */
-/* warnings */
-/* .color3 {
-    background-color: #B3001B;
-} */
-/* button/navbars */
-/* .color4 {
-    background-color: #1000FF;
-} */
