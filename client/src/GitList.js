@@ -1,4 +1,4 @@
-export default portfolio = [
+const portfolio = [
     {
         name: "Rock, Paper, Scissors",
         lang: ["Javascript", "JQuery", "Firebase"],
@@ -73,3 +73,5 @@ export default portfolio = [
     //     link2Name: ""
     // },
 ]
+
+export default portfolio
